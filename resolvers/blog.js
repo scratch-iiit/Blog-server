@@ -17,7 +17,7 @@ const resolvers = {
             const { title } = args;
             console.log(title);
             await Blog.findOneAndDelete({ title: title });
-            return `Blog with title: '${title}' is deleted`;
+            return `'${title}' Deleted successfully`;
         },
         updateBlog: async (_parent, args, _context, _info) => {
             const { id } = args;
